@@ -20,7 +20,7 @@ body {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Roboto", serif;
   font-weight: 400;
   font-style: normal;
@@ -41,7 +41,7 @@ h1 {
   font-family: "Roboto", serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   padding-left: 1rem;
 }

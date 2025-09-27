@@ -2,17 +2,17 @@ const works = [
   {
     id: "pio",
     title: "01 Pio Vinbar",
-    skills: ["HTML", "CSS", "JavaScript", "ASTRO", "FIGMA", "UX Research", "Premiere Pro", "Illustrator", "Prototyping", "Branding"],
+    skills: ["2. Sem", "HTML", "CSS", "JavaScript", "ASTRO", "FIGMA", "Netlify", "UX Research", "Premiere Pro", "Illustrator", "Prototyping", "Branding"],
   },
   {
     id: "bareen",
     title: "02 Bareen X Fujifilm",
-    skills: ["HTML", "CSS", "JavaScript", "ASTRO", "FIGMA", "UX Research", "Supabase", "Premiere Pro", "Illustrator", "Content Creation", "Photoshop", "Client Pitch", "Ideation & Concept Development"],
+    skills: ["2. Sem", "HTML", "CSS", "JavaScript", "ASTRO", "FIGMA", "UX Research", "Supabase", "Premiere Pro", "Illustrator", "Content Creation", "Photoshop", "Client Pitch", "Ideation & Concept Development"],
   },
   {
     id: "misbrug",
     title: "03 Misbrugsportalen",
-    skills: ["HTML", "CSS", "JavaScript", "ASTRO", "FIGMA", "UX Research", "Premiere Pro", "Illustrator", "Prototyping", "Branding", "Client Pitch"],
+    skills: ["2. Sem", "HTML", "CSS", "JavaScript", "ASTRO", "FIGMA", "UX Research", "Premiere Pro", "Illustrator", "Prototyping", "Branding", "Client Pitch"],
   },
   {
     id: "kh",
@@ -22,7 +22,7 @@ const works = [
   {
     id: "rubber",
     title: "05 Rubberduck",
-    skills: ["HTML", "CSS", "JavaScript", "ASTRO", "FIGMA", "Redesign", "Illustrator", "Prototyping", "Photography & Photo Editing", "Client Pitch", "Branding", "Graphic Design", "SCRUM"],
+    skills: ["1. Sem", "HTML", "CSS", "JavaScript", "Filezilla", "ASTRO", "FIGMA", "Redesign", "Illustrator", "Prototyping", "Photography & Photo Editing", "Client Pitch", "Branding", "Graphic Design", "SCRUM"],
   },
 ];
 
@@ -56,27 +56,34 @@ const buttons = [
   { btn: document.querySelector("#rubber"), video: document.querySelector("#rubber_video"), ul: document.querySelector("#ul_rubber") },
 ];
 
-buttons.forEach(({ video, ul }) => {
-  video.classList.add("display");
-  ul.classList.add("display");
-});
-
-buttons.forEach(({ btn, video, ul }) => {
-  btn.addEventListener("mouseenter", () => {
-    video.classList.add("visible");
-    video.classList.remove("display");
-    ul.classList.add("visible");
-    ul.classList.remove("display");
-  });
-
-  btn.addEventListener("mouseleave", () => {
+if (window.innerWidth >= 1024) {
+  buttons.forEach(({ video, ul }) => {
     video.classList.add("display");
-    video.classList.remove("visible");
     ul.classList.add("display");
-    ul.classList.remove("visible");
-    video.currentTime = 0;
   });
-});
+
+  buttons.forEach(({ btn, video, ul }) => {
+    btn.addEventListener("mouseenter", () => {
+      video.classList.add("visible");
+      video.classList.remove("display");
+      ul.classList.add("visible");
+      ul.classList.remove("display");
+    });
+
+    btn.addEventListener("mouseleave", () => {
+      video.classList.add("display");
+      video.classList.remove("visible");
+      ul.classList.add("display");
+      ul.classList.remove("visible");
+      video.currentTime = 0;
+    });
+  });
+} else {
+  buttons.forEach(({ video, ul }) => {
+    video.classList.add("visible");
+    ul.classList.add("visible");
+  });
+}
 
 const scrollElements = document.querySelectorAll(".scroll-element");
 

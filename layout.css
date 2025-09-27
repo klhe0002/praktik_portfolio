@@ -1,14 +1,13 @@
-/********** forside **********/
 .me {
   border-radius: 32px;
-  width: 90%;
 }
+
 .display {
   display: none;
 }
 
-.padding {
-  padding-top: 1rem !important;
+.row_2 {
+  padding-top: 2rem;
 }
 
 .align {
@@ -19,8 +18,8 @@
 }
 
 .overskrift {
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .visible {
@@ -39,8 +38,9 @@
 }
 
 .works {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
+
 .kompe {
   flex-wrap: wrap;
   display: flex;
@@ -89,7 +89,7 @@ li {
 }
 
 .about {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 html {
@@ -116,7 +116,7 @@ html {
   background-clip: text;
   background-image: url("img/gradient.webp");
   background-size: 100%;
-  cursor: pointer;
+  /* cursor: pointer; */
 
   animation: kf_bounce 0.4s ease-in-out;
   /* transition: transform 0.4s ease; */
@@ -153,24 +153,19 @@ html {
   }
 }
 
-@media (min-width: 750px) {
-  .grid1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 5rem;
-  }
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  padding-top: 80px;
+  padding-bottom: 10rem;
 }
 
-@media (min-width: 750px) {
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-
-    padding-top: 80px;
-    padding-bottom: 10rem;
-  }
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
 }
 
 .tekst_boks {
@@ -232,12 +227,6 @@ html {
   padding-bottom: 15rem;
 }
 
-@media (max-width: 750px) {
-  .arrow {
-    display: none !important;
-  }
-}
-
 .pil-knap1 {
   display: grid;
   justify-content: center;
@@ -259,12 +248,12 @@ html {
   font-style: italic;
 }
 
-.hero {
+/* .hero {
   background-color: black;
   padding-left: 10rem;
   padding-right: 10rem;
   padding-bottom: 20rem;
-}
+} */
 
 .pil {
   background-color: #000000;
@@ -301,6 +290,18 @@ html {
   }
 }
 
+.hero {
+  background-color: black;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 10rem;
+}
+
+.big {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
 @media (min-width: 750px) {
   .arrow {
     position: absolute;
@@ -324,5 +325,333 @@ html {
   }
   60% {
     transform: translateY(5px);
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: 4%;
+  left: 50%;
+  top: 61%;
+  animation: bounce 2s infinite;
+}
+
+@media (min-width: 750px) {
+  /********** forside **********/
+  .me {
+    width: 90%;
+  }
+  .display {
+    display: none;
+  }
+
+  .padding {
+    padding-top: 1rem !important;
+  }
+
+  .align {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overskrift {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .visible {
+    display: flex;
+  }
+
+  .visible2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .big {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .works {
+    /* cursor: pointer; */
+  }
+  .kompe {
+    flex-wrap: wrap;
+    display: flex;
+    color: white;
+    list-style: none;
+    /* background-color: rgba(129, 193, 200, 0.33); */
+    border-style: solid;
+    border-width: 0.05rem;
+    border-color: rgb(255, 255, 255);
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 9999px;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    display: flex;
+    color: white;
+    list-style: none;
+  }
+
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  #pio_video,
+  #bareen_video,
+  #misbrug_video,
+  #kh_video,
+  #rubber_video {
+    margin: auto 0;
+    transition: all 0.4s ease;
+  }
+
+  .about {
+    padding-bottom: 2rem;
+  }
+
+  html {
+    scroll-behavior: inherit;
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  #bareen:hover,
+  #misbrug:hover,
+  #kh:hover,
+  #rubber:hover,
+  #pio:hover {
+    color: transparent;
+    background-clip: text;
+    background-image: url("img/gradient.webp");
+    background-size: 100%;
+    cursor: default;
+
+    animation: kf_bounce 0.4s ease-in-out;
+    /* transition: transform 0.4s ease; */
+  }
+
+  .scroll-element {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .scroll-element.visible2 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #misbrug,
+  #kh,
+  #rubber,
+  #bareen,
+  #pio {
+    animation: kf_bounce 5s ease-in-out infinite;
+  }
+
+  @keyframes kf_bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    padding-top: 80px;
+    padding-bottom: 10rem;
+  }
+
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 5rem;
+  }
+
+  .tekst_boks {
+    padding-left: 0%;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .grid_1-1 {
+    gap: 40px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 80px;
+  }
+
+  .index {
+    padding-left: 0%;
+  }
+
+  .index_2 {
+    padding-left: 0%;
+  }
+
+  .index_3 {
+    border: 0;
+    height: 0.5px;
+    background-color: #333;
+    width: 100%;
+    margin: auto;
+  }
+
+  .hero_text {
+    font-size: 2rem;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+
+    color: transparent;
+    background-clip: text;
+    background-image: url("img/gradient.webp");
+    background-size: 150%;
+
+    animation: kf_herot 10s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+  }
+
+  @keyframes kf_herot {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+  .forside_om {
+    padding-bottom: 15rem;
+  }
+
+  .pil-knap1 {
+    display: grid;
+    justify-content: center;
+  }
+
+  .forside_h1 {
+    color: transparent;
+  }
+
+  .klara {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .studerer {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .hero {
+    background-color: black;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 20rem;
+  }
+
+  .pil {
+    background-color: #000000;
+    background-size: 200px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    padding-inline: 42px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+  }
+  .pil:hover {
+    color: transparent;
+    background-clip: text;
+    background-image: url("img/gradient.webp");
+    background-size: 150%;
+
+    animation: kf_hover 2s cubic-bezier(0.3, 0, 0.7, 1);
+  }
+
+  @keyframes kf_hover {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .arrow {
+      position: absolute;
+      width: 2%;
+      left: 57%;
+      top: 49%;
+      animation: bounce 2s infinite;
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+    60% {
+      transform: translateY(5px);
+    }
   }
 }
