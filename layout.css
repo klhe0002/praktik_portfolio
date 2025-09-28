@@ -129,7 +129,7 @@ html {
   transform: translateY(0);
 }
 
-#misbrug,
+/* #misbrug,
 #kh,
 #rubber,
 #bareen,
@@ -147,7 +147,7 @@ html {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .grid_1-1 {
   display: grid;
@@ -464,13 +464,13 @@ html {
     transform: translateY(0);
   }
 
-  #misbrug,
+  /* #misbrug,
   #kh,
   #rubber,
   #bareen,
   #pio {
     animation: kf_bounce 5s ease-in-out infinite;
-  }
+  }*/
 
   @keyframes kf_bounce {
     0% {
