@@ -6,10 +6,6 @@
   display: none;
 }
 
-.row_2 {
-  padding-top: 2rem;
-}
-
 .align {
   align-items: center;
   justify-content: center;
@@ -357,8 +353,8 @@ html {
   }
 
   .overskrift {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .visible {
@@ -376,9 +372,6 @@ html {
     padding-bottom: 1rem;
   }
 
-  .works {
-    /* cursor: pointer; */
-  }
   .kompe {
     flex-wrap: wrap;
     display: flex;
@@ -634,7 +627,7 @@ html {
       position: absolute;
       width: 2%;
       left: 57%;
-      top: 49%;
+      top: 46%;
       animation: bounce 2s infinite;
     }
   }

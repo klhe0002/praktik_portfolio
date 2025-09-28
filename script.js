@@ -109,3 +109,11 @@ workLink.addEventListener("click", (e) => {
   e.preventDefault();
   workSection.scrollIntoView({ behavior: "smooth" });
 });
+
+const aboutLink = document.querySelector("#aboutLink");
+const aboutSection = document.querySelector("#about");
+
+aboutLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  aboutSection.scrollIntoView({ behavior: "smooth" });
+});
