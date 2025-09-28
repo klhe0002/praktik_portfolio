@@ -14,6 +14,10 @@ img {
   /* padding-bottom: 7rem; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   zoom: 0.99;
